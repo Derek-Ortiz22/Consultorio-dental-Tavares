@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/stylelanding.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+
+</head>
+<body>
+
+    <header>
+            <h1>Dental Tavares</h1>
+            <h4>Bienvenid@</h4>
+    </header>
+
+    <article id="contenido">
+            <h2>¡Regístrate para conocer promociones y obtener beneficios!</h2>
+
+            <form id="formPaciente">
+        <fieldset>
+        <legend>Ingresa los siguientes datos:</legend>
+        <input id="nombre" type="text" placeholder="Nombre:" required>
+        <input id="correo" type="email" placeholder="Correo:" required>
+        <input id="telefono" type="text" placeholder="Telefono" required>
+        <select id="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="nobinario">No binario</option>
+        </select>
+        <input type="submit" id="btnGuardar" value="Guardar">
+        <input type="submit" id="btnActualizar" value="Actualizar">
+        </fieldset>
+        
+         <input type="submit" value="Enviar" id="btnEnviar">
+    </form>
+    <br>
+    <h4>Usuarios que has registrado:</h4>
+    <div id="pacientesRegistrados"></div>
+
+        </article>
+
+        <script src="js/miScript.js"></script>
+    
+</body>
+</html>

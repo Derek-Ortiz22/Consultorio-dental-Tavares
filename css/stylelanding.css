@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #e6f5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+header {
+    background: #b4e8f1;
+    width: 100%;
+    padding: 25px 0;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 35px;
+    color: #004b61;
+}
+
+header h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #006d8e;
+}
+
+#contenido {
+    width: 90%;
+    max-width: 600px;
+    margin: 35px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#contenido h2,
+#contenido h4 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form fieldset {
+    width: 100%;
+    border: 2px solid #79d3e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form legend {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #004b61;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #9adce8;
+    font-size: 15px;
+    text-align: center; 
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #00a3c8;
+}
+
+#btnGuardar,
+#btnActualizar,
+#btnEnviar,
+a input {
+    background: #00a3c8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btnGuardar:hover,
+#btnActualizar:hover,
+#btnEnviar:hover,
+a input:hover {
+    background: #e95d8A;
+}
+
+a {
+    width: 100%;
+}
+
+a input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#pacientesRegistrados {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f2fcff;
+    border-left: 5px solid #00a3c8;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #contenido {
+        padding: 20px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
