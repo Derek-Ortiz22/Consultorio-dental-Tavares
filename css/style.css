@@ -12,7 +12,7 @@ background: #d3e7f4;
 .icono {
 width: 200px;
 }
-
+    
 .nav-menu a {
 text-decoration: none;
 color: black;
@@ -295,6 +295,21 @@ p{
     text-decoration: none;
     border-radius: 10px;
 }
+.logo-circulo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;          
+    background-color: #bae9f0;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;             
+}
+
+.logo-principal {
+    width: 140px;
+    height: auto;
+}
 
 /* Reglas */
 @media (max-width: 768px) {
@@ -331,5 +346,75 @@ p{
         width: 70%; 
         text-align: center;
         padding: 12px 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body{
+        padding: 0 12px;
+    }
+
+    .container,
+    .container_location,
+    .contenido{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .texto{
+        width: 95%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 280px;
+    }
+
+    .carousel-item img{
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 576px) {
+
+    header {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .icono {
+        max-height: auto;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-circulo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .logo-principal {
+        width: 250px;
     }
 }
